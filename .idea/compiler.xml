@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="demo" />
         <module name="discovery" />
+        <module name="gateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -21,6 +22,7 @@
       <module name="SpringCloud-Emp-Dep" options="" />
       <module name="demo" options="-parameters" />
       <module name="discovery" options="-parameters" />
+      <module name="gateway" options="-parameters" />
     </option>
   </component>
 </project>
