@@ -8,24 +8,28 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="search" />
+        <module name="discovery" />
         <module name="details" />
         <module name="demo" />
-        <module name="discovery" />
+        <module name="config" />
         <module name="gateway" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="Emp_Dep" target="1.8" />
+      <module name="properties" target="11" />
       <module name="Spring-Cloud-Project-main" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="SpringCloud-Emp-Dep" options="" />
+      <module name="config" options="-parameters" />
       <module name="demo" options="-parameters" />
       <module name="details" options="-parameters" />
       <module name="discovery" options="-parameters" />
       <module name="gateway" options="-parameters" />
+      <module name="properties" options="-parameters" />
       <module name="search" options="-parameters" />
     </option>
   </component>
