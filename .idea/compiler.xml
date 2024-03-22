@@ -7,6 +7,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="search" />
+        <module name="details" />
         <module name="demo" />
         <module name="discovery" />
         <module name="gateway" />
@@ -21,8 +23,10 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="SpringCloud-Emp-Dep" options="" />
       <module name="demo" options="-parameters" />
+      <module name="details" options="-parameters" />
       <module name="discovery" options="-parameters" />
       <module name="gateway" options="-parameters" />
+      <module name="search" options="-parameters" />
     </option>
   </component>
 </project>

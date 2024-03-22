@@ -14,6 +14,8 @@
         <module>emp_dep</module>
         <module>discovery</module>
         <module>gateway</module>
+        <module>search</module>
+        <module>details</module>
 
     </modules>
 
