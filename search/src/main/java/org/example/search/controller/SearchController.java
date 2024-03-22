@@ -1,5 +1,6 @@
 package org.example.search.controller;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.example.search.pojo.GeneralResponse;
 import org.example.search.service.SearchService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,7 @@ public class SearchController {
     private SearchService searchService;
 
     @GetMapping("/merge/result")
+    @HystrixCommand
     public ResponseEntity<GeneralResponse> performAsyncOperationsAndMergeResults() {
         Map<String, String> combinedResults = searchService.getCombinedResults();
 
